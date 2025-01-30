@@ -5,7 +5,7 @@ import javabean.Cociente;
 public class CalculadoraTest {
 
     public static void main(String[] args) {
-        Calculadora calc = new Calculadora();
+        Cociente calc = new Cociente();
 
         /**
          *   Ejemplo de uso de los métodos
