@@ -7,6 +7,7 @@ import java.util.Scanner;
  * La salida es la suma de los valores proporcionados.</p>
  * @author Kevin Crespo Romero
  * @version 1.0
+ * @see testing.CalculadoraTest
  */
 
 public class Suma {
@@ -89,6 +90,15 @@ public class Suma {
 
 
     // Métodos propios //
+
+    /**
+     * <p>Suma dos números reales introducidos por el
+     * usuario y devuelve el resultado.</p>
+     * @param 'real1' Primer número a sumar.
+     * @param 'real2' Segundo número a sumar.
+     * @return La suma de real1 y real2.
+     * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
+     */
     public double sumaDosReales(){
         System.out.println("Vamos a sumar dos números reales. ");
         System.out.println("Introduce el primer número real: ");
@@ -102,6 +112,14 @@ public class Suma {
         return real1+real2;
     }
 
+    /**
+     * <p>Suma dos números enteros introducidos por el
+     * usuario y devuelve el resultado.</p>
+     * @param 'entero1' Primer número a sumar.
+     * @param 'entero2' Segundo número a sumar.
+     * @return La suma de entero1 y entero2.
+     * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
+     */
     public int sumaDosEnteros() {
         System.out.println("Vamos a sumar dos números enteros. ");
         System.out.println("Introduce el primer número entero: ");
@@ -116,6 +134,15 @@ public class Suma {
 
     }
 
+    /**
+     * <p>Suma tres números reales introducidos por el
+     * usuario y devuelve el resultado.</p>
+     * @param 'real1' Primer número a sumar.
+     * @param 'real2' Segundo número a sumar.
+     * @param 'real3' Tercer número a sumar.
+     * @return La suma de real1 y real2.
+     * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
+     */
     public double sumaTresReales() {
         System.out.println("Vamos a sumar tres números reales. ");
         System.out.println("Introduce el primer número real: ");
