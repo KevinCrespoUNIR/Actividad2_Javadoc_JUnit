@@ -21,7 +21,7 @@ public class Suma {
     private double valorAcumulado;
     private Scanner scanner = new Scanner(System.in);
 
-    // Constructor con todos los campos //
+    // Constructor con todos los parámetros //
     public Suma(int entero1,
                 int entero2,
                 double real1,
@@ -90,16 +90,18 @@ public class Suma {
 
 
     // Métodos propios //
-
-    /**
-     * <p>Suma dos números reales introducidos por el
-     * usuario y devuelve el resultado.</p>
-     * @param 'real1' Primer número a sumar.
-     * @param 'real2' Segundo número a sumar.
-     * @return La suma de real1 y real2.
-     * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
-     */
     public double sumaDosReales(){
+        /**
+         * <p>Suma dos números reales introducidos por el
+         * usuario y devuelve el resultado.</p>
+         * @param real1 Primer número a sumar.
+         * @param real2 Segundo número a sumar.
+         * @param valorAcumulado Almacena el resultado de las tres operaciones y
+         *                      el resultado se mostrará en {@link CalculadoraTest}
+         * @return La suma de real1 y real2.
+         * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
+         */
+
         System.out.println("Vamos a sumar dos números reales. ");
         System.out.println("Introduce el primer número real: ");
         real1 = scanner.nextDouble();
@@ -112,15 +114,20 @@ public class Suma {
         return real1+real2;
     }
 
-    /**
-     * <p>Suma dos números enteros introducidos por el
-     * usuario y devuelve el resultado.</p>
-     * @param 'entero1' Primer número a sumar.
-     * @param 'entero2' Segundo número a sumar.
-     * @return La suma de entero1 y entero2.
-     * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
-     */
+
+
     public int sumaDosEnteros() {
+        /**
+         * <p>Suma dos números enteros introducidos por el
+         * usuario y devuelve el resultado.</p>
+         * @param entero1 Primer número a sumar.
+         * @param entero2 Segundo número a sumar.
+         * @param valorAcumulado Almacena el resultado de las tres operaciones y
+         *                      el resultado se mostrará en {@link CalculadoraTest}
+         * @return La suma de entero1 y entero2.
+         * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
+         */
+
         System.out.println("Vamos a sumar dos números enteros. ");
         System.out.println("Introduce el primer número entero: ");
         entero1 = scanner.nextInt();
@@ -134,16 +141,20 @@ public class Suma {
 
     }
 
-    /**
-     * <p>Suma tres números reales introducidos por el
-     * usuario y devuelve el resultado.</p>
-     * @param 'real1' Primer número a sumar.
-     * @param 'real2' Segundo número a sumar.
-     * @param 'real3' Tercer número a sumar.
-     * @return La suma de real1 y real2.
-     * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
-     */
+
     public double sumaTresReales() {
+        /**
+         * <p>Suma tres números reales introducidos por el
+         * usuario y devuelve el resultado.</p>
+         * @param real1 Primer número a sumar.
+         * @param real2 Segundo número a sumar.
+         * @param real3 Tercer número a sumar.
+         * @param valorAcumulado Almacena el resultado de las tres operaciones y
+         *                      el resultado se mostrará en {@link CalculadoraTest}
+         * @return La suma de real1, real2 y real3.
+         * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
+         */
+
         System.out.println("Vamos a sumar tres números reales. ");
         System.out.println("Introduce el primer número real: ");
         real1 = scanner.nextDouble();

@@ -1,6 +1,14 @@
 package javabean;
-
 import java.util.Scanner;
+
+/**
+ * <p>La clase contiene las funciones que restan números, ya sean reales o enteros,
+ * recibiendo dos o tres parámetros de entrada y devolviendo su resultado.
+ * La salida es la suma de los valores proporcionados.</p>
+ * @author Kevin Crespo Romero
+ * @version 1.0
+ * @see testing.CalculadoraTest
+ */
 
 public class Resta {
 
@@ -13,7 +21,8 @@ public class Resta {
     private double valorAcumulado;
     private Scanner scanner = new Scanner(System.in);
 
-    // Constructor con todos los campos //
+
+    // Constructor con todos los parámetros //
     public Resta(int entero1,
                  int entero2,
                  double real1,
@@ -83,6 +92,17 @@ public class Resta {
 
     // Métodos propios //
     public double restaDosReales(){
+        /**
+         * <p>Resta dos números reales introducidos por el
+         * usuario y devuelve el resultado.</p>
+         * @param real1 Primer número a restar.
+         * @param real2 Segundo número a restar.
+         * @param valorAcumulado Almacena el resultado de las tres operaciones y
+         *                      el resultado se mostrará en {@link CalculadoraTest}
+         * @return La resta de real1 y real2.
+         * @throws IllegalArgumentException en caso de introducirse un valor no numérico.
+         */
+
         System.out.println("Vamos a restar dos números reales. ");
         System.out.println("Introduce el primer número real: ");
         real1 = scanner.nextDouble();
@@ -95,7 +115,19 @@ public class Resta {
         return real1 - real2;
     }
 
+
+
     public int restaDosEnteros() {
+        /**
+         * <p>Resta dos números enteros introducidos por el
+         * usuario y devuelve el resultado.</p>
+         * @param entero1 Primer número a restar.
+         * @param entero2 Segundo número a restar.
+         * @param valorAcumulado Almacena el resultado de las tres operaciones y
+         *                      el resultado se mostrará en {@link CalculadoraTest}
+         * @return La resta de entero1 y entero2.
+         * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
+         */
         System.out.println("Vamos a restar dos números enteros. ");
         System.out.println("Introduce el primer número entero: ");
         entero1 = scanner.nextInt();
@@ -109,7 +141,20 @@ public class Resta {
 
     }
 
+
+
     public double restaTresReales() {
+        /**
+         * <p>Resta tres números reales introducidos por el
+         * usuario y devuelve el resultado.</p>
+         * @param real1 Primer número a restar.
+         * @param real2 Segundo número a restar.
+         * @param real3 Tercer número a restar.
+         * @param valorAcumulado Almacena el resultado de las tres operaciones y
+         *                      el resultado se mostrará en {@link CalculadoraTest}
+         * @return La resta de real1, real2 y real3.
+         * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
+         */
         System.out.println("Vamos a restar tres números reales. ");
         System.out.println("Introduce el primer número real: ");
         real1 = scanner.nextDouble();
