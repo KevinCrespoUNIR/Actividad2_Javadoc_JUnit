@@ -1,8 +1,10 @@
 package testing;
 
+
 import javabean.Suma;
 import javabean.Resta;
 import java.util.Scanner;
+
 
 /**
  * <p>Clase que representa una calculadora con operaciones básicas:
@@ -24,7 +26,9 @@ import java.util.Scanner;
  * @see Resta
  */
 
+
 public class CalculadoraTest {
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -107,7 +111,7 @@ public class CalculadoraTest {
 
 
 
+
     }
 }
-
 
