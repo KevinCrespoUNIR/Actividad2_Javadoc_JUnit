@@ -1,118 +1,114 @@
 package javabean;
 
-/**
- *<p>Clase Calculadora </p>
- *
- * <pre>Implementa 4 clases como atributos de intancias que son las que nos va a permiri hacer las operaciones correspondiente </pre>
- *
- * @see Producto
- * @see Sumar
- * @see Restar
- * @see Dividir
- *
- *
- * @author Paula Arroyo
- * @author Kevin
- * @author Adrian Muñoz Rodriguez
- * @version 1.1
- */
+import java.util.Scanner;
 
 public class Calculadora {
-
-//atributos de clases
-    /**
-     *
-     * @see Producto
-     * @see Sumar
-     * @see Restar
-     * @see Dividir
-     */
-   double resultado = 0;
-    Producto producto = new Producto();
-   //constructor
-
-
-    /**
-     * metodo constructor vacio
-     */
-    public Calculadora() {
-    }
-
-    //getter
-
-    /**
-     *
-     * @return el valor actual de la variable {@code private} de tipo {@code double} resultado, que contiene el valor de la ultima operacion realizada
-     */
-    public double getResultado() {
-        return resultado;
-    }
-
-
-    //metodos propios
-
-    /**
-     * @author Adrian Ramses Muñoz Rodriguez
-     *
-     * @param a
-     * @param b
-     * @return
-     */
-    public void multiplicar(int a, int b) {
-
-        this.resultado=producto.multiplicar(a,b);
-        System.out.println(resultado);
-    }
-
-    /**
-     * @author Adrian Ramses Muñoz Rodriguez
-     *
-     * @param a
-     * @param b
-     * @param c
-     * @return
-     */
-    public void multiplicar(int a, int b,int c) {
-
-      this.resultado=producto.multiplicar(a,b,c);
-        System.out.println(resultado);
-    }
-
-    /**
-     * @author Adrian Ramses Muñoz Rodriguez
-     *
-     * @param a
-     * @param b
-     * @return
-     */
-    public void multiplicar(double a, double b) {
-
-        this.resultado=producto.multiplicar(a,b);
-        System.out.println(resultado);
-    }
-
-    /**
-     * @author Adrian Ramses Muñoz Rodriguez
-     *
-     * @param a
-     * @param b
-     * @return
-     */
-    public void potencia(int a, int b) {
-
-        this.resultado=producto.potencia(a,b);
-        System.out.println(resultado);
-    }
-
 
 
     public static void main(String[] args) {
 
+        Scanner entrada = new Scanner(System.in);
+        int bandera=0;
 
-Calculadora calculadora = new Calculadora();
+        do{
 
-        calculadora.potencia(2,3);
-        calculadora.multiplicar(2,3);
+            System.out.println("REALIZAR OPERACION:\n"+"1. Sumar\n"+"2. Restar\n"+"3 Multiplicar\n"+"4. Dividir\n"+"5. SALIR");
 
-    }
-}
+
+
+
+            switch (entrada.nextInt()){
+
+
+                //sumar
+                case 1:
+
+                    Suma suma1 = new Suma();
+
+                    double resultado_suma1 = 	suma1.sumaDosReales();
+                    int resultado_suma2    = 	suma1.sumaDosEnteros();
+                    double resultado_suma3 = 	suma1.sumaTresReales();
+
+                    System.out.println("El resultado es: " + resultado_suma1);
+                    System.out.println("El resultado es: " + resultado_suma2);
+                    System.out.println("El resultado es: " + resultado_suma3);
+
+                    System.out.println(
+                            "El valor acumulado de todas las operaciones es: "
+                                    + suma1.getValorAcumulado());
+                    // ---------------------------------------------------- //
+
+                    System.out.println(" ");
+                    System.out.println(" ");
+
+
+                    break;
+
+                    //restar
+                case 2:
+
+
+
+                    // ---------------------- RESTA ----------------------- //
+                    Resta resta1 = new Resta();
+
+
+                    double resultado_resta1 = 	resta1.restaDosReales();
+                    int resultado_resta2    = 	resta1.restaDosEnteros();
+                    double resultado_resta3 = 	resta1.restaTresReales();
+
+                    System.out.println("El resultado es: " + resultado_resta1);
+                    System.out.println("El resultado es: " + resultado_resta2);
+                    System.out.println("El resultado es: " + resultado_resta3);
+
+                    System.out.println(
+                            "El valor acumulado de todas las operaciones es: "
+                                    + resta1.getValorAcumulado());
+                    // ---------------------------------------------------- //
+
+
+                    break;
+
+                    //multiplicar
+                case 3:
+
+
+                    //ramses
+
+
+
+
+
+                    break;
+
+                    //dividir
+                case 4:
+
+
+                    //paula
+
+
+
+
+
+                    break;
+
+
+
+                    //salir
+                case 5:
+
+                    bandera=1;
+
+
+                    break;
+
+            }
+
+
+
+        }while(bandera != 1);
+
+    }//fin main
+}//fin clase
+
