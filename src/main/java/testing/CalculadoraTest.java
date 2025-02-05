@@ -2,6 +2,7 @@ package testing;
 
 
 import javabean.Suma;
+import javabean.Resta;
 
 public class CalculadoraTest {
 
