@@ -2,7 +2,7 @@ package javabean;
 
 import java.util.Scanner;
 
-public class itCalculadora {
+public class Calculadora {
 
 
     public static void main(String[] args) {
