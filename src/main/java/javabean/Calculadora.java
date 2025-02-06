@@ -12,7 +12,7 @@ public class Calculadora {
 
         do{
 
-            System.out.println("REALIZAR OPERACION:\n"+"1. Sumar\n"+"2. Restar\n"+"3 Multiplicar\n"+"4. Dividir\n"+"5. SALIR");
+            System.out.println("REALIZAR OPERACION:\n"+"1. Sumar\n"+"2. Restar\n"+"3 Multiplicar\n"+"4. Cociente\n"+"5. SALIR");
 
 
 
@@ -81,11 +81,13 @@ public class Calculadora {
 
                     break;
 
-                    //dividir
+                    //cociente
                 case 4:
 
 
-                    //paula
+                    // ---------------------- COCIENTE ----------------------- //
+
+                    // ---------------------------------------------------- //
 
 
 

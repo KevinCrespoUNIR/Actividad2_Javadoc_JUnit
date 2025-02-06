@@ -7,7 +7,6 @@ import java.util.Scanner;
  * La salida es la suma de los valores proporcionados.</p>
  * @author Kevin Crespo Romero
  * @version 1.0
- * @see testing.CalculadoraTest
  */
 
 public class Suma {
