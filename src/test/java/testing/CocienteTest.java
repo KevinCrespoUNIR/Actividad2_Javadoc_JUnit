@@ -1,26 +1,38 @@
 package testing;
 
+import javabean.Cociente;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CocienteTest {
 
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
+
+        Cociente cociente = new Cociente();
+
     }
 
-    @org.junit.jupiter.api.Test
+    @AfterEach
+    void tearDown() {
+    }
+
+    @Test
     void dividirReales() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void dividirEnteros() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void inversoReal() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void raiz() {
     }
 }
