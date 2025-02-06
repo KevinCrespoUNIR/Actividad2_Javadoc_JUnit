@@ -52,27 +52,12 @@ public class Calculadora {
                      * @return El resultado de las sumas y
                      * el valor acumulado de las mismas.
                      */
-                    Suma suma1 = new Suma();
-
-                    double resultado_suma1 = 	suma1.sumaDosReales();
-                    int resultado_suma2    = 	suma1.sumaDosEnteros();
-                    double resultado_suma3 = 	suma1.sumaTresReales();
-
-                    System.out.println("El resultado es: " + resultado_suma1);
-                    System.out.println("El resultado es: " + resultado_suma2);
-                    System.out.println("El resultado es: " + resultado_suma3);
-
-                    System.out.println(
-                            "El valor acumulado de todas las operaciones es: "
-                                    + suma1.getValorAcumulado());
-
-                    /*
-                    SumaNuevo sumar = new SumaNuevo();
+                    Suma sumar = new Suma();
                     System.out.println("La suma de dos reales es: " + sumar.sumarDosReales(5.4 , 5.6));
                     System.out.println("La suma de dos reales es: " + sumar.sumarDosEnteros(5 , 5));
                     System.out.println("La suma de dos reales es: " + sumar.sumarTresReales(5.5 , 20.10 , 10.2));
                     System.out.println("El valor acumulado de todas las operaciones es: " + sumar.getValorAcumulado());
-                     */
+
 
                     break;
 
@@ -92,27 +77,11 @@ public class Calculadora {
                      * @return El resultado de las restas y
                      * el valor acumulado de las mismas.
                      */
-                    Resta resta1 = new Resta();
-
-                    double resultado_resta1 = 	resta1.restaDosReales();
-                    int resultado_resta2    = 	resta1.restaDosEnteros();
-                    double resultado_resta3 = 	resta1.restaTresReales();
-
-                    System.out.println("El resultado es: " + resultado_resta1);
-                    System.out.println("El resultado es: " + resultado_resta2);
-                    System.out.println("El resultado es: " + resultado_resta3);
-
-                    System.out.println(
-                            "El valor acumulado de todas las operaciones es: "
-                                    + resta1.getValorAcumulado());
-
-                    /*
-                    RestaNuevo restar = new RestaNuevo();
+                    Resta restar = new Resta();
                     System.out.println("La suma de dos reales es: " + restar.restarDosReales(5.4 , 5.6));
                     System.out.println("La suma de dos reales es: " + restar.restarDosEnteros(5 , 5));
                     System.out.println("La suma de dos reales es: " + restar.restarTresReales(5.5 , 20.10 , 10.2));
                     System.out.println("El valor acumulado de todas las operaciones es: " + restar.getValorAcumulado());
-                    */
 
                     break;
 
