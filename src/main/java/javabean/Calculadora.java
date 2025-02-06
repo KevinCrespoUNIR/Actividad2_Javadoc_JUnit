@@ -20,6 +20,8 @@ import java.util.Scanner;
  * @version 1.0
  * @see Suma
  * @see Resta
+ * @see Cociente
+ *
  *
  * TODO: @see resto de clases
  */
@@ -88,18 +90,23 @@ public class Calculadora {
                     // TODO: dividir
                 case 4:
 
+                    /**
+                     * <p>todos los métodos que están relacionados con la división de la calculadora</p>
+                     * @author Paula Arroyo
+                     * @return El resultado de las divisiones
+                     */
 
-                    //paula
-
-
-
-
+                    Cociente cocientes = new Cociente();
+                    System.out.println("La división de dos reales es: " + cocientes.dividirReales(12.5, 2.5));
+                    System.out.println("La división de dos enteros es: " + cocientes.dividirEnteros(10, 5));
+                    System.out.println("El inverso de un número real es: " + cocientes.inversoReal(2));
+                    System.out.println("La raiz de un número es: " + cocientes.raiz(64));
 
                     break;
 
 
-
                     //salir
+
                 case 5:
                     bandera=1;
 
