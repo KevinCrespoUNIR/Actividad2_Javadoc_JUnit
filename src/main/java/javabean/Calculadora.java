@@ -73,8 +73,25 @@ public class Calculadora {
                 case 3:
 
 
-                    //ramses
+                    System.out.println("1.multiplicar 2 enteros\n"+"2.multiplicar 3 enteros\n"+"3.multiplicar 2 reales\n"+"4.potendia");
 
+
+                    switch (entrada.nextLine()){
+
+                        case "1":
+
+                            break; case "2":
+
+                                break;
+                                case "3":
+
+                                    break;
+                                    case "4":
+
+                                        break;
+
+
+                }
 
 
 
