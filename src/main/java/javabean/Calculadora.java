@@ -77,11 +77,87 @@ public class Calculadora {
                     break;
 
                 // TODO: multiplicar
+
                 case 3:
 
+                    Producto producto = new Producto();
+                    int num1;
+                    int num2;
+                    int num3;
+
+                    double num4;
+                    double num5;
                     //ramses
 
 
+                    System.out.println("1. Multiplicar 2 enteros\n"+"2. Multiplicar 3 enteros\n"+"3. Multiplicar 2 reales\n"+"4. potencia");
+
+                    switch (entrada.nextInt()){
+                        case 1:
+
+                            System.out.println("ingrese un numero entero");
+
+                             num1 = entrada.nextInt();
+
+                            System.out.println("ingrese otro numero entero");
+
+                             num2 = entrada.nextInt();
+
+                            System.out.println(producto.multiplicar(num1 , num2));
+
+                            break;
+
+                        case 2:
+
+
+
+                            System.out.println("ingrese un numero entero");
+
+                             num1 = entrada.nextInt();
+
+                            System.out.println("ingrese otro numero entero");
+
+                             num2 = entrada.nextInt();
+
+                            System.out.println("ingrese otro numero entero");
+
+                            num3 = entrada.nextInt();
+
+                            System.out.println(producto.multiplicar(num1 , num2, num3));
+
+
+                            break;
+
+                       case 3:
+
+
+                           System.out.println("ingrese un numero real");
+
+                           num4 = entrada.nextDouble();
+
+                           System.out.println("ingrese otro numero real");
+
+                           num5 = entrada.nextDouble();
+
+                           System.out.println(producto.multiplicar(num4 , num5));
+
+                           break;
+
+                        case 4:
+
+                            System.out.println("ingrese la base");
+
+                            num1 = entrada.nextInt();
+
+                            System.out.println("ingrese el exponente");
+
+                            num2 = entrada.nextInt();
+
+                            System.out.println(producto.potencia(num1 , num2));
+
+
+                            break;
+                    }
 
 
 
@@ -117,6 +193,7 @@ public class Calculadora {
 
         }while(bandera != 1);
 
+        entrada.close();
     }//fin main
 }//fin clase
 
