@@ -32,7 +32,7 @@ public class Calculadora {
         int bandera=0;
 
         do{
-            System.out.println("REALIZAR OPERACION:\n"+"1. Sumar\n"+"2. Restar\n"+"3 Multiplicar\n"+"4. Dividir\n"+"5. SALIR");
+            System.out.println("REALIZAR OPERACION:\n"+"1. Sumar\n"+"2. Restar\n"+"3. Multiplicar\n"+"4. Dividir\n"+"5. SALIR");
 
             switch (entrada.nextInt()){
 
@@ -99,7 +99,7 @@ public class Calculadora {
                     //ramses
 
 
-                    System.out.println("1. Multiplicar 2 enteros\n"+"2. Multiplicar 3 enteros\n"+"3 Multiplicar 2 reales\n"+"4 potencia");
+                    System.out.println("1. Multiplicar 2 enteros\n"+"2. Multiplicar 3 enteros\n"+"3. Multiplicar 2 reales\n"+"4. potencia");
 
                     switch (entrada.nextInt()){
                         case 1:
@@ -197,6 +197,7 @@ public class Calculadora {
 
         }while(bandera != 1);
 
+        entrada.close();
     }//fin main
 }//fin clase
 
