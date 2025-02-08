@@ -34,7 +34,7 @@ public class Calculadora {
         int bandera=0;
 
         do{
-            System.out.println("REALIZAR OPERACION:\n"+"1. Sumar\n"+"2. Restar\n"+"3 Multiplicar\n"+"4. Dividir\n"+"5. SALIR");
+            System.out.println("REALIZAR OPERACION:\n"+"1. Sumar\n"+"2. Restar\n"+"3. Multiplicar\n"+"4. Dividir\n"+"5. SALIR");
 
             switch (entrada.nextInt()){
 
