@@ -256,14 +256,88 @@ public class Calculadora {
                     /**
                      * <p>todos los métodos que están relacionados con la división de la calculadora</p>
                      * @author Paula Arroyo
-                     * @return El resultado de las divisiones
+                     * @see Cociente
+                     * @param numero1
+                     * @param numero2
+                     * @param numero3
+                     * @param numero4
+                     * @param numero5
+                     * @return El resultado de las divisiones u otras operaciones como la raiz cuadrada
                      */
 
-                    Cociente cocientes = new Cociente();
+                   /* Cociente cocientes = new Cociente();
                     System.out.println("La división de dos reales es: " + cocientes.dividirReales(12.5, 2.5));
                     System.out.println("La división de dos enteros es: " + cocientes.dividirEnteros(10, 5));
                     System.out.println("El inverso de un número real es: " + cocientes.inversoReal(2));
                     System.out.println("La raiz de un número es: " + cocientes.raiz(64));
+
+                    */
+
+                    Cociente cociente = new Cociente();
+                    int numero1;
+                    int numero2;
+                    int numero3;
+
+                    double numero4;
+                    double numero5;
+                    //Paula
+
+
+                    System.out.println("1. Dividir Reales\n"+"2. Dividir Enteros\n"+"3. Inverso Real\n"+"4. Raíz Cuadrada");
+
+                    switch (entrada.nextInt()){
+                        case 1:
+
+                            System.out.println("ingrese un numero real");
+
+                            numero4 = entrada.nextDouble();
+
+                            System.out.println("ingrese otro numero real");
+
+                            numero5 = entrada.nextDouble();
+
+                            System.out.println(cociente.dividirReales(numero4 , numero5));
+
+                            break;
+
+                        case 2:
+
+                            System.out.println("ingrese un numero entero");
+
+                            numero1 = entrada.nextInt();
+
+                            System.out.println("ingrese otro numero entero");
+
+                            numero2 = entrada.nextInt();
+
+                            System.out.println(cociente.dividirEnteros(numero1 , numero2));
+
+
+                            break;
+
+                        case 3:
+
+
+                            System.out.println("ingrese un numero real");
+
+                            num4 = entrada.nextDouble();
+
+                            System.out.println(cociente.inversoReal(num4));
+
+                            break;
+
+                        case 4:
+
+                            System.out.println("ingrese un numero real");
+
+                            num5 = entrada.nextDouble();
+
+                            System.out.println(cociente.raiz(num5));
+
+
+                            break;
+                    }
+
 
                     break;
 
