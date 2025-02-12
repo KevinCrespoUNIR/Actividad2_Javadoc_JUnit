@@ -163,10 +163,29 @@ public class Calculadora {
                     break;
 
 
-                // TODO: multiplicar
+                // multiplicar
 
                 case 3:
-
+                    /**
+                     * <p>Clase {@code Producto}</p>
+                     *
+                     * <p>Intancia de la Clase {@code Producto} que implementa el metodo {@code multiplicar} usa sobrecarga de metodos y devuelve el resultado de una multiplicacion
+                     * que devuelve un dato de tipo {@code Doueble}; Tiene un segundo metodo {@code potencia} que calcula la potencia de la base y el exponente que le pasen por parametro
+                     *  y devuelve un dato de tipo {@code Doueble};
+                     * </p>
+                     *
+                     * @see javabean.Producto
+                     * @see javabean.Producto.multiplica
+                     * @see javabean.Producto.potencia
+                     *@author Adrian Ramses Muñoz Rodriguez
+                     *
+                     * @param num1 recibe un dato de tipo {@code int}
+                     * @param num2 recibe un dato de tipo {@code int}
+                     * @param num3 recibe un dato de tipo {@code int}
+                     * @param num4 recibe un dato de tipo {@code Doueble}
+                     * @param num5 recibe un dato de tipo {@code Doueble}
+                     * @return El resutado de la operacion que se le indique en un dato de tipo {@code Doueble}
+                     */
                     Producto producto = new Producto();
                     int num1;
                     int num2;
