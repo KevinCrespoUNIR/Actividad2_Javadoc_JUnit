@@ -16,6 +16,7 @@ public class Suma {
      */
     public double valorAcumulado;
 
+    // Get
     public double getValorAcumulado() {
         return valorAcumulado;
     }

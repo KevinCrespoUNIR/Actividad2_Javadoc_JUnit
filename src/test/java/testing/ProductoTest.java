@@ -24,7 +24,7 @@ class ProductoTest {
     @Test
     void testMultiplicar() {
         double resultado = producto.multiplicar(2,4,8);
-        assertEquals(64, resultado, "(2 * 4) * 8 debe ser 64");
+        assertEquals(64, resultado, "(2 * 4 * 8)debe ser 64");
     }
 
     @Test
