@@ -12,16 +12,6 @@ package javabean;
 public class Resta {
 
     /**
-     * @param valorAcumulado Almacena el resultado de las tres operaciones y
-     * el resultado se mostrará en {@link Calculadora}
-     */
-    public double valorAcumulado;
-
-    public double getValorAcumulado() {
-        return valorAcumulado;
-    }
-
-    /**
      * <p>Resta dos números reales y devuelve el resultado.</p>
      * @param real1 Primer número a restar.
      * @param real2 Segundo número a restar.
@@ -29,7 +19,7 @@ public class Resta {
      * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
      */
     public double restarDosReales(double real1, double real2){
-        valorAcumulado += real1 - real2;
+
         return real1 - real2;
     }
 
@@ -41,7 +31,7 @@ public class Resta {
      * @throws IllegalArgumentException si se introduce un dato que no sea numérico o entero.
      */
     public int restarDosEnteros(int entero1, int entero2){
-        valorAcumulado += entero1 - entero2;
+
         return entero1 - entero2;
     }
 
@@ -54,7 +44,7 @@ public class Resta {
      * @throws IllegalArgumentException si se introduce un dato que no sea numérico.
      */
     public double restarTresReales(double real1, double real2, double real3){
-        valorAcumulado += real1 - real2 - real3;
+
         return real1 - real2 - real3;
     }
 }

@@ -40,17 +40,14 @@ public class Calculadora {
                 case 1:
                     /**
                      * <p>Hace la operación de sumar las cantidades
-                     * que se asignan y muestra los resultados
-                     * y la cantidad del valor acumulado de las tres
-                     * operaciones.</p>
+                     * que se asignan y muestra los resultados.</p>
                      * @see Suma
                      * @param entero1
                      * @param entero2
                      * @param real1
                      * @param real2
                      * @param real3
-                     * @return El resultado de las sumas y
-                     * el valor acumulado de las mismas.
+                     * @return El resultado de las sumas.
                      */
                     Suma sumar = new Suma();
                     int entero1;
@@ -70,7 +67,6 @@ public class Calculadora {
                             real2 = entrada.nextDouble();
 
                             System.out.println("La suma de dos reales es: " + sumar.sumarDosReales(real1, real2));
-                            System.out.println("El valor acumulado es: " + sumar.getValorAcumulado());
                             break;
 
                         case 2:
@@ -94,27 +90,22 @@ public class Calculadora {
                             real3 = entrada.nextDouble();
 
                             System.out.println("La suma de tres reales es: " + sumar.sumarTresReales(real1, real2, real3));
-
                             break;
                     }//Cierre switch SUMAR
-
                     break;
 
                 //restar
                 case 2:
                     /**
                      * <p>Hace la operación de restar las cantidades
-                     * que se asignan y muestra los resultados
-                     * y la cantidad del valor acumulado de las tres
-                     * operaciones.</p>
+                     * que se asignan y muestra los resultados.
                      * @see Resta
                      * @param entero_1
                      * @param entero_2
                      * @param real_1
                      * @param real_2
                      * @param real_3
-                     * @return El resultado de las restas y
-                     * el valor acumulado de las mismas.
+                     * @return El resultado de las restas.
                      */
                     Resta restar = new Resta();
                     int entero_1;
@@ -133,7 +124,7 @@ public class Calculadora {
                             System.out.println("ingrese otro numero real");
                             real_2 = entrada.nextDouble();
 
-                            System.out.println("La suma de dos reales es: " + restar.restarDosReales(real_1, real_2));
+                            System.out.println("La resta de dos reales es: " + restar.restarDosReales(real_1, real_2));
                             break;
 
                         case 2:
@@ -143,7 +134,7 @@ public class Calculadora {
                             System.out.println("ingrese otro numero entero");
                             entero_2 = entrada.nextInt();
 
-                            System.out.println("La suma de dos enteros es: " + restar.restarDosEnteros(entero_1, entero_2));
+                            System.out.println("La resta de dos enteros es: " + restar.restarDosEnteros(entero_1, entero_2));
                             break;
 
                         case 3:
@@ -156,14 +147,14 @@ public class Calculadora {
                             System.out.println("ingrese el tercer numero real");
                             real_3 = entrada.nextDouble();
 
-                            System.out.println("La suma de tres reales es: " + restar.restarTresReales(real_1, real_2, real_3));
+                            System.out.println("La resta de tres reales es: " + restar.restarTresReales(real_1, real_2, real_3));
                             break;
+
                     }//Cierre switch RESTAR
                     break;
 
 
                 // multiplicar
-
                 case 3:
                     /**
                      * <p>Clase {@code Producto}</p>
@@ -268,7 +259,7 @@ public class Calculadora {
 
                     break;
 
-                    // TODO: dividir
+                    // Dividir
                 case 4:
 
                     /**

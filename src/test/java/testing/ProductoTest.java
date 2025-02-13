@@ -37,4 +37,5 @@ class ProductoTest {
         double resultado = producto.potencia(7,3);
         assertEquals(343, resultado, "(7^3) debe ser 343");
     }
+
 }
