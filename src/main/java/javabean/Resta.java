@@ -5,6 +5,7 @@ package javabean;
  * recibiendo dos o tres parámetros de entrada y devolviendo su resultado.
  * La salida es la resta de los valores proporcionados.</p>
  * @author Kevin Crespo Romero
+ * @link <a href="https://github.com/KevinCrespoUNIR">Mi perfil de GitHub</a>
  * @version 1.0
  * @see Calculadora
  */

@@ -22,8 +22,6 @@ import java.util.Scanner;
  * @see Resta
  * @see Cociente
  * @see Producto
- *
- * TODO: @see resto de clases
  */
 
 public class Calculadora {
@@ -72,6 +70,7 @@ public class Calculadora {
                             real2 = entrada.nextDouble();
 
                             System.out.println("La suma de dos reales es: " + sumar.sumarDosReales(real1, real2));
+                            System.out.println("El valor acumulado es: " + sumar.getValorAcumulado());
                             break;
 
                         case 2:
@@ -274,8 +273,6 @@ public class Calculadora {
 
                     break;
             }
-
-
 
         }while(bandera != 1);
 
