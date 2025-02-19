@@ -8,6 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RestaTest {
 
+    /**
+     * Este test  verificará que la clase resta funciona correctamente.
+     * @author Paula Arroyo
+     * @link <a href="https://github.com/Polita86">Mi perfil de GitHub</a>
+     * @version 1.0
+     */
+
     private Resta resta;
     @BeforeEach
     void setUp() {
