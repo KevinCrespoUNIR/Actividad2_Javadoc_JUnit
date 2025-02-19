@@ -8,7 +8,6 @@ public class Cociente {
      * @link <a href="https://github.com/Polita86">Mi perfil de GitHub</a>
      * @version 1.0
      */
-
     /**
      * Método para dividir dos números reales
      * @param num1
