@@ -5,6 +5,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author Kevin Crespo Romero
+ * @link <a href="https://github.com/KevinCrespoUNIR">Mi perfil de GitHub</a>
+ * @version 1.0
+ */
+
 class ProductoTest {
 
     private Producto producto;  // Declarando el atributo de clase Producto
