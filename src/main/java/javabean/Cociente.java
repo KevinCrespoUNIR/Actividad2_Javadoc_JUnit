@@ -5,6 +5,7 @@ public class Cociente {
     /**
      * Esta clase implementará todos los métodos que están relacionados con la división de la calculadora.
      * @author Paula Arroyo
+     * @link <a href="https://github.com/Polita86">Mi perfil de GitHub</a>
      * @version 1.0
      */
 

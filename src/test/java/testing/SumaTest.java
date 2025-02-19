@@ -7,6 +7,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SumaTest {
+
+    /**
+     * Este test  verificará que la clase suma funciona correctamente.
+     * @author Paula Arroyo
+     * @link <a href="https://github.com/Polita86">Mi perfil de GitHub</a>
+     * @version 1.0
+     */
+
     private Suma suma;
 
     @BeforeEach
