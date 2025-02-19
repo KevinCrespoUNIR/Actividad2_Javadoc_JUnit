@@ -6,6 +6,7 @@ package javabean;
  * <pre>La clase {@code Producto} se encarga de hacer todas las operaciones necesarias para multiplicacion y potencias
  * </pre>
  * @author Adrian Ramses Muñoz Rodriguez
+ * gitHub: https://github.com/RamsesMR
  * @version 1.1
  */
 public class Producto {
